@@ -27,10 +27,12 @@ no number is specified the default 50 samples will be used.
 ## Setup
 Windows:
 Clone the repo and all the included files. Open a command prompt and install the requirements using the python module "pip" using the requirements file. Once requirements are installed, the script can be used.
+
       python -m pip install -r requirements.txt
 
 Linux / Mac
 Clone the repo and all the included files. Open a terminal session and install the requirements using the python3 module "pip" using the requirements file. Once requirements are installed, the script can be used.
+
       python3 -m pip install -r requirements.txt
       
 ## Example
