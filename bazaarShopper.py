@@ -9,8 +9,8 @@ import argparse
 import os
 
 parser = argparse.ArgumentParser(description = "Pull samples from MalwareBazzar by specifying tag associated with the malware and the number of samples to download. If no number is specified the default 50 samples will be used. ")
-parser.add_argument("tag", help="tag used on MalwareBazaar to identify malware relations.")
-parser.add_argument("--limit", "-l", default="50", type=int, help="Maximum limit for pulling samples. Default is 50")
+parser.add_argument("tag", help="Specify the tag used on MalwareBazaar to identify the malware to download.")
+parser.add_argument("--limit", "-l", default="50", type=int, help="Specify the maximum limit for pulling samples. Default is 50")
 parser.add_argument("--sample_directory", "-s", default=".", help="Specify a directory for saving the samples. Defaults to current directory.")
 args = parser.parse_args()
 
