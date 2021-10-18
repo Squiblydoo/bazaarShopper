@@ -24,6 +24,12 @@ no number is specified the default 50 samples will be used.
         --sample_directory SAMPLE_DIRECTORY, -s SAMPLE_DIRECTORY
                             Specify a directory for saving the samples. Defaults to current directory.
 
+        --unzip UNZIP, -u UNZIP
+                        Specify a directory for saving unzipped samples. Defaults to creating a directory named Unzipped.
+        
+        --password PASSWORD, -p PASSWORD
+                        Specify a password for unzipping files. Defaults to 'infected'
+
 ## Setup
 Windows:
 Clone the repo and all the included files. Open a command prompt and install the requirements using the python module "pip" using the requirements file. Once requirements are installed, the script can be used.
@@ -38,4 +44,4 @@ Clone the repo and all the included files. Open a terminal session and install t
 ## Example
 The following example will download 10 of the latest samples tagged as "Jupyter" and save them to a direcotry named "SampleDirectory". If SampleDirectory does not exist, it will be created.
 
-    python bazaarShopper.py Jupyter -l 10 -s SampleDirectory
+    python bazaarShopper.py Jupyter -l 10 -s SampleDirectory -u Unzipped
